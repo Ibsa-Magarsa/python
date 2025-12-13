@@ -16,9 +16,6 @@ def is_leap(year):
         # print("Not Leap Year. ")
         return False 
 def days_in_month(year, month):
-    # year = int(input("Enter a year:"))
-    # month = int(input("Enter a month:"))
-    # days = days_in_month(year, month)
     if month > 12 or (month) < 1:
         messagebox.showerror(title="Oops", message="Invalid argument")
         return "Invalid month"
@@ -28,11 +25,9 @@ def days_in_month(year, month):
             messagebox.showinfo(title="Month", message= 29)
             return 29
             
-         
     messagebox.showinfo(title="Month", message= f"{month_days[month -1]}")
 
     # return month_days[month -1]
-
 
 window = Tk()
 window.title("Leap Year")
@@ -55,4 +50,3 @@ search_button = Button(window, text="Search",width=14, command=lambda:days_in_mo
 search_button.grid(column=2, row=3)
 
 window.mainloop()
-# print(days)
