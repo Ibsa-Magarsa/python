@@ -31,7 +31,6 @@ def days_in_month(year, month):
 
 window = Tk()
 window.title("Leap Year")
-window.config(padx= 140, pady= 100, bg="YELLOW")
 
 year_label = Label(text="Year:", bg="yellow", font=("Arial", 10, "bold"))
 year_label.grid(column=1, row=1)
